@@ -32,7 +32,7 @@
 ```mermaid
 flowchart TD
     MCU["Microprocessador<br/>(Raspberry Pi 4)"]
-    TOUC["7&quot; raspberry pi touch screen display"]
+    TOUC[7&quot; raspberry pi touch screen display]
     LEVEL1["Conversor de Nível Lógico<br/>(5V ↔ 3.3V)"]
     US["Sensor de Distância<br/>Ultrassom HC-SR04"]
     CAM["Webcam usb<br/>1080px"]
