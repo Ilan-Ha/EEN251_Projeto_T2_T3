@@ -29,6 +29,34 @@
 |:---:|:---|:---:|
 
 ## Diagrama de Blocos
+```mermaid
+flowchart TD
+    MCU["Microprocessador<br/>(Raspberry Pi 4)"]
+    TOUC["7&quot; raspberry pi touch screen display"]
+    LEVEL1["Conversor de Nível Lógico<br/>(5V ↔ 3.3V)"]
+    US["Sensor de Distância<br/>Ultrassom HC-SR04"]
+    CAM["Webcam usb<br/>1080px"]
+
+    MCU --> TOUC
+    CAM --> MCU
+    US --> LEVEL1
+    LEVEL1 --> MCU
+
+
+    %% Optional styling
+    classDef sensor fill:#cfe8f3,stroke:#333,stroke-width:1px;
+    classDef converter fill:#f4c542,stroke:#333,stroke-width:1px;
+    classDef controller fill:#00ff00,stroke:#333,stroke-width:2px;
+
+    class MCU controller;
+    class US sensor;
+    class LEVEL1 converter;
+    classDef default fill:#cfe8f3,color:#000,stroke:#000,stroke-width:2px;
+
+    linkStyle default stroke:#000,stroke-width:2px;
+
+```
+
 
 ## Softwares Utilizados
 
