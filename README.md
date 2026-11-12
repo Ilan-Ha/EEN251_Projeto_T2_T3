@@ -28,6 +28,17 @@
 | ID | Requisito | Tipo |
 |:---:|:---|:---:|
 
+### Componentes Utilizados
+
+- 1 Raspberry Pi 4 8 Gb Ram
+- 1 Carão MicroSD 16 Gb
+- 1 Módulo Conversor de Nível Lógico 3,3V - 5V
+- 1 Webcam HD Full USB 2.0 A0198
+- 2 LEDs 5mm (1 vermelha e 1 verde)
+- 2 Resistores 33 Ω
+- 1 Sensor Ultrassônico HC-SR04
+- 1 Protoboard 170 pontos
+
 ## Diagrama de Blocos
 ```mermaid
 flowchart TD
