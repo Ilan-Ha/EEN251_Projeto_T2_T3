@@ -80,6 +80,18 @@ Durante o desenvolvimento do projeto foram utilizados os seguintes softwares:
 
 ## Imagens do Modelo
 
+| Vista Frontal | Vista Lateral |
+| :---: | :---: |
+| ![Vista frontal do modelo cad assembly do projeto](./images/cad_vista_frontal.png) | ![Vista lateral do modelo cad assembly do projeto](./images/cad_vista_lateral.png) |
+|
+| Vista Traseira | Vista Isométrica |
+| :---: | :---: |
+| ![Vista traseira do modelo cad assembly do projeto](./images/cad_vista_traseira.png) | ![Vista isométrica do modelo cad assembly do projeto](./images/cad_vista_isometrica.png) |
+|
+| Encaixes Internos | 
+| :---: |
+| ![Vista traseira do modelo cad assembly do projeto sem a tampa, com os encaixes internos visíveis](./images/cad_vista_traseira_encaixes.png) |
+
 ## Imagens do Projeto
 
 ### Montagem
