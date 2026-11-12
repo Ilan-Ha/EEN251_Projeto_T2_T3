@@ -78,19 +78,28 @@ Durante o desenvolvimento do projeto foram utilizados os seguintes softwares:
   
 ## Tecnologias Envolvidas
 
-## Imagens do Modelo
+## Modelo CAD
+
+### Imagens assembly
 
 | Vista Frontal | Vista Lateral |
 | :---: | :---: |
 | ![Vista frontal do modelo cad assembly do projeto](./images/cad_vista_frontal.png) | ![Vista lateral do modelo cad assembly do projeto](./images/cad_vista_lateral.png) |
-|
+
 | Vista Traseira | Vista Isométrica |
 | :---: | :---: |
 | ![Vista traseira do modelo cad assembly do projeto](./images/cad_vista_traseira.png) | ![Vista isométrica do modelo cad assembly do projeto](./images/cad_vista_isometrica.png) |
-|
+
 | Encaixes Internos | 
 | :---: |
 | ![Vista traseira do modelo cad assembly do projeto sem a tampa, com os encaixes internos visíveis](./images/cad_vista_traseira_encaixes.png) |
+
+### Arquivos baixados pela internet
+
+| Display | Webcam | LED | Ultrassom | Protoboard |
+| :---: | :---: | :---: | :---: | :---: |
+| [Modelo CAD Display + Raspberry Pi](https://grabcad.com/library/raspberry-pi-display-7-1) | [Modelo CAD Webcam](https://grabcad.com/library/rapoo-c260-usb-black-full-hd-webcam-1) | [Modelo CAD LED 5mm](https://grabcad.com/library/led-5mm-1) | [Modelo CAD Sensor Ultrassom HC-SR04](https://grabcad.com/library/ultrasonic-sensor-hc-sr04-3) | [Modelo CAD Protoboard 170 pinos](https://grabcad.com/library/little-protoboard-sldprt-1) | 
+| Feito por: [max morozov](https://grabcad.com/max.morozov-2) | Feito por: [Ayman Abasi](https://grabcad.com/ayman.abasi-1) | Feito por: [Lucas Ribeiro](https://grabcad.com/lucas.ribeiro) | Feito por: [MRMS - WORKSHOP](https://grabcad.com/mrms.workshop-1) | Feito por: [Marcos Dalmeida](https://grabcad.com/marcos.dalmeida-1) |
 
 ## Imagens do Projeto
 
