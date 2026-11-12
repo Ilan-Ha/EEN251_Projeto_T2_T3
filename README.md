@@ -80,4 +80,18 @@ Durante o desenvolvimento do projeto foram utilizados os seguintes softwares:
 
 ## Imagens do Modelo
 
+## Imagens do Projeto
+
+### Montagem
+
+| Vista Frontal | Vista Lateral | Vista Traseira |
+| :---: | :---: | :---: |
+| ![Projeto montado visto pela frente](./images/assembly_vista_frontal.jpeg) | ![Projeto montado visto pela lateral](./images/assembly_vista_lateral.jpeg) | ![Projeto montado visto por trás](./images/assembly_vista_traseira.jpeg) |
+
+### Circuito
+
+| Integrado a montagem (perto) | Integrado a montagem (longe) | Circuito isolado  |
+| :---: | :---: | :---: |
+| ![Circuito montado junto aos outros componentes do projeto visto de perto](./images/circuito_montado_perto.jpeg) | ![Circuito montado junto aos outros componentes do projeto visto de longe](./images/circuito_montado_longe.jpeg) | ![Circuito visto sem o resto dos componentes do projeto](./images/circuito_isolado.jpeg) |
+
 ## Apresentação do Projeto em Vídeo
