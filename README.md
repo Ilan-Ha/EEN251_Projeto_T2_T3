@@ -17,11 +17,15 @@
 
 | ID | Requisito | Tipo |
 |:---:|:---|:---:|
+| RO-01 | Microprocessador | Obrigatório |
+| RO-02 | Câmera de vídeo digital | Obrigatório |
+| RO-02 | Comunicação com dashboard online | Obrigatório |
 
 ### Requisitos Desejáveis
 
 | ID | Requisito | Tipo |
 |:---:|:---|:---:|
+| RD-01 | Detector de presença por distância | Desejável |
 
 ### Requisitos Opcionais
 
