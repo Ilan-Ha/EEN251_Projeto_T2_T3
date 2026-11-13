@@ -17,20 +17,24 @@
 
 | ID | Requisito | Tipo |
 |:---:|:---|:---:|
-| RO-01 | Microprocessador | Obrigatório |
+| RO-01 | Microprocessador Raspberry Pi 4 | Obrigatório |
 | RO-02 | Câmera de vídeo digital | Obrigatório |
-| RO-02 | Comunicação com dashboard online | Obrigatório |
+| RO-03 | Comunicação de microprocessador com dashboard online | Obrigatório |
+| RO-04 | Interação com usuário | Obrigatório |
 
 ### Requisitos Desejáveis
 
 | ID | Requisito | Tipo |
 |:---:|:---|:---:|
-| RD-01 | Detector de presença por distância | Desejável |
+| RD-01 | Sensor de distância | Desejável |
+| RD-02 | Interface gráfica | Desejável |
 
 ### Requisitos Opcionais
 
 | ID | Requisito | Tipo |
 |:---:|:---|:---:|
+| ROP-01 | Mensagens sonoras  | Opcional |
+| ROP-02 | Leitor por aproximação  | Opcional |
 
 ### Componentes Utilizados
 
@@ -49,11 +53,15 @@ flowchart TD
     MCU["Microprocessador<br/>(Raspberry Pi 4)"]
     TOUC["7'' raspberry pi touch screen display"]
     LEVEL1["Conversor de Nível Lógico<br/>(5V ↔ 3.3V)"]
-    US["Sensor de Distância<br/>Ultrassom HC-SR04"]
-    CAM["Webcam usb<br/>1080px"]
+    US["Sensor de Distância<br/>Ultrassom HC-SR04<br/>(desejável)"]
+    CAM["Webcam usb<br/>1080px<br/>(desejável)"]
     MQTT["Conexão Wi-Fi<br/>Protocolo MQTT"]
     DOT["Ubidots Broker"]
+    SOM["Alto falante<br/>(opcional)"]
+    LET["Leitor por aproximação<br/>(opcional)"]
 
+    LET --> MCU
+    MCU --> SOM
     MCU --> TOUC
     CAM --> MCU
     US --> LEVEL1
@@ -69,7 +77,7 @@ flowchart TD
     classDef controller fill:#00ff00,stroke:#333,stroke-width:2px;
 
     class MCU controller;
-    class US sensor;
+    class US,LET sensor;
     class LEVEL1 converter;
     classDef default fill:#cfe8f3,color:#000,stroke:#000,stroke-width:2px;
 
