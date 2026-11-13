@@ -78,7 +78,7 @@ flowchart TD
 
     class MCU controller;
     class US,LET sensor;
-    class LEVEL1 converter;
+    class LEVEL1,DOT converter;
     classDef default fill:#cfe8f3,color:#000,stroke:#000,stroke-width:2px;
 
     linkStyle default stroke:#000,stroke-width:2px;
