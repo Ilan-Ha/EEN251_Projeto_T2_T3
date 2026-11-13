@@ -9,6 +9,10 @@
 
 ## Funcionamento do Sistema
 
+Enquanto no projeto anterior a este, [Bebedouro Inteligente para Pets](https://github.com/Ilan-Ha/EEN251_Projeto_T1/tree/main#bebedouro-inteligente-para-pets), a comunicação entre o sensor ultrassom e o microcontrolador permitia um modo de operação de baixo consumo energético a partir de uma certa distância entre o dispositivo e o ambiente, neste trabalho o mesmo não seria possível com o microprocessador utilizado, o qual é apenas capaz de estar ligado ou desligado, não tendo um estado de baixo consumo. Deste modo, o sensor de distância foi adicionado para limitar o tempo em que o sistema precisaria lidar com um alto volume de dados a serem processados. 
+
+Quando o modo de detecção facial do sistema entrava em execução, inicialmente o único dispositivo que passava a atuar era o ultrassom. Caso um usuário se aproximasse do dispositivo, até 30 cm, a câmera era aberta, com a transmissão de vídeo sendo processada pelo modelo interno de reconhecimento facial e os resultados de tal análise sendo enviados por meio do protocolo MQTT para o broker do Ubidots e sendo representado no dispositivo por um display do vídeo capturado com um rótulo envolta do rosto do usuário além do acendimento de uma das LEDs, vermelha se fosse um desconhecido, verde caso conhecido.
+
 ## Objetivos do Projeto
 
 ## Requisitos do Sistema
@@ -90,10 +94,19 @@ flowchart TD
 
 Durante o desenvolvimento do projeto foram utilizados os seguintes softwares:
 
-- [Thonny](https://thonny.org/) — utilizado para programação, testes e depuração do Raspberry Pi 4
-- [RealVNC Viewer](https://www.realvnc.com/en/connect/download/viewer/?lai_sr=0-4&lai_sl=l) - utilizado para conectar e programar o raspberry pi remotamente, assim não necessitando um monitor, teclado e mouse apenas para interagir com o microporcessador
+- [Thonny](https://thonny.org/),[Visual Studio Code](https://code.visualstudio.com/) — programação e testes de código;
+-  [Thonny](https://thonny.org/) - depuração do Raspberry Pi 4;
+- [RealVNC Viewer](https://www.realvnc.com/en/connect/download/viewer/?lai_sr=0-4&lai_sl=l) - conecção remota com o raspberry pi;
+- [Solidworks](https://www.solidworks.com/pt-br) - modelagem 3D da estrutura do controle de acesso por reconhecimento facial;
   
 ## Tecnologias Envolvidas
+
+O projeto utiliza conceitos de:
+- Internet das Coisas (IoT)
+- Sensores ultrassônicos
+- Reconhecimento facial
+- Protocolo MQTT
+- Automação e segurança eletrônica
 
 ## Modelo CAD
 
