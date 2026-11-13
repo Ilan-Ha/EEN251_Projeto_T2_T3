@@ -51,12 +51,17 @@ flowchart TD
     LEVEL1["Conversor de Nível Lógico<br/>(5V ↔ 3.3V)"]
     US["Sensor de Distância<br/>Ultrassom HC-SR04"]
     CAM["Webcam usb<br/>1080px"]
+    MQTT["Conexão Wi-Fi<br/>Protocolo MQTT"]
+    DOT["Ubidots Broker"]
 
     MCU --> TOUC
     CAM --> MCU
     US --> LEVEL1
     LEVEL1 --> MCU
-
+    MCU --> MQTT
+    MQTT --> MCU
+    MQTT --> DOT
+    DOT --> MQTT
 
     %% Optional styling
     classDef sensor fill:#cfe8f3,stroke:#333,stroke-width:1px;
