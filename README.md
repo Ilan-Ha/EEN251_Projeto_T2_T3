@@ -50,12 +50,12 @@
 ## Diagrama de Blocos
 ```mermaid
 flowchart TD
-    MCU["Microprocessador<br/>(Raspberry Pi 4)"]
-    TOUC["7'' raspberry pi touch screen display"]
+    MCU["Microprocessador<br/>(Raspberry Pi 4)<br/>(obrigatório)"]
+    TOUC["7'' raspberry pi touch screen display<br/>(desejável)"]
     LEVEL1["Conversor de Nível Lógico<br/>(5V ↔ 3.3V)"]
     US["Sensor de Distância<br/>Ultrassom HC-SR04<br/>(desejável)"]
-    CAM["Webcam usb<br/>1080px<br/>(desejável)"]
-    MQTT["Conexão Wi-Fi<br/>Protocolo MQTT"]
+    CAM["Webcam usb<br/>1080px<br/>(obrigatório)"]
+    MQTT["Conexão Wi-Fi<br/>Envio e recebimento de dados<br/>(obrigatório)"]
     DOT["Ubidots Broker"]
     SOM["Alto falante<br/>(opcional)"]
     LET["Leitor por aproximação<br/>(opcional)"]
@@ -66,10 +66,10 @@ flowchart TD
     CAM --> MCU
     US --> LEVEL1
     LEVEL1 --> MCU
-    MCU --> MQTT
-    MQTT --> MCU
-    MQTT --> DOT
-    DOT --> MQTT
+    MCU --Protocolo MQTT--> MQTT
+    MQTT --Protocolo MQTT--> MCU
+    MQTT --Protocolo MQTT--> DOT
+    DOT --Protocolo MQTT--> MQTT
 
     %% Optional styling
     classDef sensor fill:#cfe8f3,stroke:#333,stroke-width:1px;
