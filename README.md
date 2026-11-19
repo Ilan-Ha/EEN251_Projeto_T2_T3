@@ -146,3 +146,5 @@ O projeto utiliza conceitos de:
 | ![Circuito montado junto aos outros componentes do projeto visto de perto](./images/circuito_montado_perto.jpeg) | ![Circuito montado junto aos outros componentes do projeto visto de longe](./images/circuito_montado_longe.jpeg) | ![Circuito visto sem o resto dos componentes do projeto](./images/circuito_isolado.jpeg) |
 
 ## Apresentação do Projeto em Vídeo
+
+Disponível em: [https://youtu.be/x0tqo_2icMc?is=cByjwb1aEQpozAU6](https://youtu.be/x0tqo_2icMc?is=cByjwb1aEQpozAU6)
